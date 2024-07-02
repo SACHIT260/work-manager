@@ -44,6 +44,14 @@ const AddTask = () => {
       })
     }
   }
+
+  const resetForm=()=>{
+    setTask({
+      title:"",
+      content:"",
+      status:"none",
+    })
+  }
   return (
     <div className='grid grid-cols-12 justify-center'>
         <div className=' col-span-4 col-start-5  p-5 shadow-sm'>
@@ -133,7 +141,7 @@ const AddTask = () => {
               {/* button actions */}
               <div className="mt-4 flex justify-center">
                 <button className='bg-blue-600 py-2 px-3 rounded-lg hover:bg-blue-800'>Add Task</button>
-                <button className='bg-red-600 py-2 px-3 rounded-lg hover:bg-red-800 ms-3'>Clear</button>
+                <button className='bg-red-600 py-2 px-3 rounded-lg hover:bg-red-800 ms-3' onClick={resetForm}>Clear</button>
               </div>
             </form>
         </div>
