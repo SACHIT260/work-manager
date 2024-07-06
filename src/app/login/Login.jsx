@@ -108,14 +108,17 @@ const Login = () => {
                     <div className="mt-3 text-center">
               <button
                 type="submit"
-                className="px-3 py-2 bg-green-600  rounded hover:bg-green-400"
+                className="w-full sm:w-auto px-3 py-2 bg-green-600 rounded hover:bg-green-400 mb-2 sm:mb-0"
+
               >
                 Login
               </button>
               <button
                  onClick={resetForm}
                 type="button"
-                className="px-3 py-2 bg-orange-600 ms-3 rounded hover:bg-orange-400"
+                // className="px-3 py-2 bg-orange-600 ms-3 rounded hover:bg-orange-400"
+                className="w-full sm:w-auto px-3 py-2 bg-orange-600 sm:ml-3 rounded hover:bg-orange-400"
+
               >
                 Reset
               </button>
