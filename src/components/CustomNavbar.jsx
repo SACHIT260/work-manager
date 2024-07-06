@@ -29,7 +29,8 @@ const CustomNavbar = () => {
   return (
     <nav className='bg-blue-600 h-12 py-2 px-2 flex justify-between items-center'  >
       <div className='brand'>
-        <h1 className='text-3xl'><a href="#!">Work manager</a></h1>
+        {/* <h1 className='text-3xl'><a href="#!">Work manager</a></h1> */}
+        <h1 className='text-xl sm:text-2xl md:text-3xl'><a href="#!">Work Manager</a></h1>
       </div>
       <div>
         <ul className='flex space-x-5'>
